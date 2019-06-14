@@ -15,7 +15,12 @@ namespace JsonParse.Models.Detail
         public string publishDate { get; set; }
         public string fullPath { get; set; }
         public string shortText { get; set; }
-        
+        public int itemId { get; set; }
+        public string title { get; set; }
+
+        public string imageUrl { get; set; }
+        public string itemType { get; set; }
+
         public DetailCategory detailCategory { get; set; }
 
 
