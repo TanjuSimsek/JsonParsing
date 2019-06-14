@@ -9,6 +9,6 @@ namespace JsonParse.Models
     {
         public int errorCode { get; set; }
         public string errorMessage { get; set; }
-        public DataDetail DataDetail { get; set; }
+        public DataDetail data { get; set; }
     }
 }

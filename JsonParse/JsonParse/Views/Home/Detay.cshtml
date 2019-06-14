@@ -4,5 +4,11 @@
 }
 
 <h2>Detay</h2>
-@Model.errorCode
+
+@Html.Raw(Model.data.newsDetail.bodyText)
+@Model.data.newsDetail.shortText
+<a href="@Model.data.newsDetail.fullPath">Haberin Tamamı İçin Tıklayın</a><br>
+
+<img src="@Model.data.imageUrl" height="500" width="100">
+
 
