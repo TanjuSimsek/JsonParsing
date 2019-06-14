@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <button onclick="loadAnasayfa()">Anasayfa</button> <button onclick="loadDetay()">Detay</button>
+    <div id="content"></div>
+    @section scripts {
+        <script>
+            function loadAnasayfa() {
+                $("#content").load("/Home/Anasayfa");
+            }
+
+            function loadDetay() {
+                $("#content").load("/Home/Detay");
+            }
+        </script>
+    }
+</body>
+
+</html>
+

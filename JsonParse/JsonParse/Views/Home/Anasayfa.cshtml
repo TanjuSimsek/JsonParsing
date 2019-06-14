@@ -1,0 +1,28 @@
+﻿@model JsonParse.Models.HomePage
+@{
+    ViewBag.Title = "Anasayfa";
+}
+
+<h2>Anasayfa</h2>
+
+@Model.errorCode
+
+
+@foreach (var item in Model.data)
+{
+    foreach (var items in item.itemList)
+    {
+        <h1>@items.title</h1>
+        <p>@items.shortText</p>
+        <a href="@items.fullPath">Haberin Tamamı İçin Tıklayın</a>
+        <img src="@items.imageUrl" height="42" width="42">
+
+        
+            <p>@items.category.title</p>
+        
+
+
+    }
+
+}
+
