@@ -10,5 +10,14 @@
 <a href="@Model.data.newsDetail.fullPath">Haberin Tamamı İçin Tıklayın</a><br>
 
 <img src="@Model.data.imageUrl" height="500" width="100">
+<img src="@Model.data.imageUrl" height="500" width="100">
+@foreach (var item in Model.data.itemList)
+{
 
+    <p>@item.title</p> <br />
+    <a href="@item.imageUrl">Resim Detayı İçin Tıklayınız</a><br>
+    <p>@item.shortText</p>
+
+
+}
 

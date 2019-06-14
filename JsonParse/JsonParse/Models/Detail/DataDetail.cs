@@ -12,7 +12,7 @@ namespace JsonParse.Models
         public headerAd headerAd { get; set; }
         public newsDetail newsDetail { get; set; }
         public footerAd footerAd { get; set; }
-        public List<itemListDetail> itemListDetail { get; set; }
+        public List<itemListDetail> itemList { get; set; }
         public multimedia multimedia { get; set; }
         public relatedNews relatedNews { get; set; }
         public video video { get; set; }
